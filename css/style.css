@@ -89,6 +89,20 @@ nav{
 
 .graphic-design{
     margin-bottom:3rem;
+
+    h1{
+        text-align: center;
+    }
+}
+
+.graphics-card{
+    img{
+        max-width: 80%;
+        padding:1rem;
+        margin-right:auto;
+        margin-left:auto;
+        display:block;
+    }
 }
 
 footer{
