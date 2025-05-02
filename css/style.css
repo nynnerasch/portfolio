@@ -140,7 +140,7 @@ padding:2em;
     .graphics-cards{
         display:grid;
         justify-items: center;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .graphics-card{
         margin:1rem;
@@ -190,6 +190,13 @@ padding:2em;
     margin-bottom:5em;
 }
 
+.banner{
+    max-width: 90%;
+    padding:2rem;
+    display:block;
+    margin-right:auto;
+    margin-left: auto;
+}
 
 
 @media (min-width: 1024px) {
@@ -202,9 +209,5 @@ padding:2em;
     .cards{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    .graphics-cards{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
