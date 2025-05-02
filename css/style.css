@@ -10,15 +10,15 @@ h1{
     color:var(--red);
 }
 
+#letter-spacing{
+    letter-spacing: 0.14em;
+}
+
 .page-header{
     display:flex;
     align-items: center;
     .header-text{
         padding:1em;
-    }
-
-    #letter-spacing{
-        letter-spacing: 0.14em;
     }
 }
 
@@ -153,7 +153,7 @@ padding:2em;
         display:grid;
         justify-items: center;
         grid-template-columns: 1fr 1fr 1fr;
-    }
+    } 
 }
 
 .cta-button {
@@ -200,6 +200,13 @@ padding:2em;
 
 
 @media (min-width: 1024px) {
+    #mitnavn{
+        letter-spacing: 0.14em;
+    }
+
+    #letter-spacing{
+        letter-spacing: 0;
+    } 
     .page-header{
         justify-content: space-evenly;
     }
