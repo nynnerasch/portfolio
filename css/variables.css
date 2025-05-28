@@ -53,8 +53,8 @@ p{
 
 a{
     font-family: var(--main-font);
-    color:var(--red);
     text-underline-offset: 2px;
+    color: var(--black);
 }
 
 nav{

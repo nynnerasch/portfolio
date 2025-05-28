@@ -102,7 +102,6 @@ padding:2em;
     background: var(--red); /* Strong red for visibility */
     border-radius: 8px;
     letter-spacing: 0.05em;
-    transition: background 0.3s ease, transform 0.2s ease;
     
     /* Subtle shadow for depth */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -110,12 +109,10 @@ padding:2em;
 
 .cta-button:hover {
     background: #d62828; /* Darker shade on hover */
-    transform: translateY(-2px); /* Slight lift effect */
 }
 
 .cta-button:active {
     background: #b22222; /* Even darker on click */
-    transform: translateY(0);
 }
 
 .center {
@@ -138,6 +135,11 @@ padding:2em;
         justify-content: space-evenly;
     }
 }
+
+.link:hover{
+        color: var(--red);
+    }
+
 
 
 /* CAROUSEL  */
@@ -235,3 +237,58 @@ padding:2em;
         width:auto;
     }
 }
+
+.scroll-hint {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--black);
+    font-family: var(--main-font);
+  }
+  
+  @media (min-width: 1024px) {
+    .scroll-hint {
+      display: none; /* skjul hint på desktop hvor layoutet er mere intuitivt */
+    }
+  }
+  
+
+/* ANIMATIONER */
+
+/* scroll to see more wiggle */
+  @keyframes wiggle {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+  }
+  
+  .scroll-hint {
+    animation: wiggle 2s ease-in-out infinite;
+  }
+
+  
+
+  @keyframes gradientShift {
+    0%   { background-position: 0% }
+    100% { background-position: 200% }
+  }
+  
+  /* gradient på mit navn */
+  .gradient-text {
+    background: linear-gradient(90deg, var(--red), var(--black), var(--red));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientShift 5s infinite linear;
+  }
+  
+
+  /* cta knap */
+  .cta-button {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    box-shadow: 0 0 12px rgba(213, 13, 13, 0.6);
+  }
